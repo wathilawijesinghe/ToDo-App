@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>✅ To-Do List</h1>
+
+    <form id="todoForm" class="row">
+      <input id="todoInput" type="text" placeholder="Add a new task..." autocomplete="off" />
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="row controls">
+      <button id="filterAll" class="chip active" type="button">All</button>
+      <button id="filterActive" class="chip" type="button">Active</button>
+      <button id="filterDone" class="chip" type="button">Done</button>
+      <button id="clearDone" class="chip danger" type="button">Clear Done</button>
+    </div>
+
+    <ul id="todoList" class="list"></ul>
+
+    <p id="stats" class="stats"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
